@@ -11,17 +11,6 @@ div {
   margin-bottom: -290px;
 }
 
-@media screen and (max-width: 1024px) {
-  .div-gray {
-    margin-bottom: -150px;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .div-gray {
-    margin-bottom: -50px;
-  }
-}
 .fim-div-gray {
   background-color: #e9ecef;
   width: 100%;
@@ -34,5 +23,23 @@ div {
 
 #card_img{    
     margin-bottom: -220px;
+}
+
+@media screen and (max-width: 1024px) {
+  .div-gray {
+    margin-bottom: -150px;
+  }
+  #card_img{    
+    margin-bottom: -180px;
+}
+}
+
+@media screen and (max-width: 768px) {
+  .div-gray {
+    margin-bottom: -50px;
+  }
+  #card_img{    
+    margin-bottom: -120px;
+}
 }
 
