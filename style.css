@@ -5,13 +5,13 @@ div {
   max-width: 100%;
   overflow: hidden;
 }
-.div-gray {
+.div-svg {
   width: 100%;
   fill: #e9ecef;
   margin-bottom: -290px;
 }
 
-.fim-div-gray {
+.fim-div-svg {
   background-color: #e9ecef;
   width: 100%;
   fill: #fff;
@@ -26,7 +26,7 @@ div {
 }
 
 @media screen and (max-width: 1024px) {
-  .div-gray {
+  .div-svg {
     margin-bottom: -150px;
   }
   #card_img{    
@@ -35,7 +35,7 @@ div {
 }
 
 @media screen and (max-width: 768px) {
-  .div-gray {
+  .div-svg {
     margin-bottom: -50px;
   }
   #card_img{    
