@@ -1,0 +1,38 @@
+a {
+  text-decoration: none !important;
+}
+div {
+  max-width: 100%;
+  overflow: hidden;
+}
+.div-gray {
+  width: 100%;
+  fill: #e9ecef;
+  margin-bottom: -290px;
+}
+
+@media screen and (max-width: 1024px) {
+  .div-gray {
+    margin-bottom: -150px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .div-gray {
+    margin-bottom: -50px;
+  }
+}
+.fim-div-gray {
+  background-color: #e9ecef;
+  width: 100%;
+  fill: #fff;
+}
+
+#faq {
+  margin-top: -30%;
+}
+
+#card_img{    
+    margin-bottom: -220px;
+}
+
