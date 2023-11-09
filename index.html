@@ -62,7 +62,8 @@
                         class="btn btn-warning btn-sm m-1">Sombreamento</button></a>
                 <a href="https://getbootstrap.com/docs/5.0/utilities/borders/"><button
                         class="btn btn-warning btn-sm m-1">Borda</button></a>
-                <a href><button class="btn btn-warning btn-sm m-1">Imagem</button></a>
+                <a href="https://getbootstrap.com.br/docs/4.1/content/images/"><button
+                        class="btn btn-warning btn-sm m-1">Imagem</button></a>
                 <h4 class="text-secondary mt-2">Sessões</h4>
                 <a
                     href="https://getbootstrap.com.br/docs/4.1/components/navbar/"><button
@@ -230,7 +231,7 @@
 
             </div>
 
-            <!-- cards_imports -->
+            <!-- modal cards_imports -->
             <section id="cards_imports"
                 class=" bg-body-secondary d-flex justify-content-center align-items-center m-0">
                 <div class="col-lg-8">
@@ -244,11 +245,13 @@
                                 type="button" class="btn btn-primary"
                                 data-bs-toggle="modal"
                                 data-bs-target="#exampleModal">
-                                Importar <strong class="text-warning">Bootstrap</strong>via
-                                CDN <br> no HTML
+                                Importar <strong class="text-warning">CSS</strong>
+                                do Bootstrap
+                                <br> no HTML
                             </h3>
 
-                            <div class="modal fade" id="exampleModal"
+                            <div class="modal fade  modal-xl modal-xl"
+                                id="exampleModal"
                                 tabindex="-1"
                                 aria-labelledby="exampleModalLabel"
                                 aria-hidden="true">
@@ -257,7 +260,8 @@
                                         <div class="modal-header">
                                             <h1 class="modal-title fs-5"
                                                 id="exampleModalLabel">Importar
-                                                Bootstrap via CDN no HTML</h1>
+                                                CSS
+                                                Bootstrap no HTML</h1>
                                             <button type="button"
                                                 class="btn-close"
                                                 data-bs-dismiss="modal"
@@ -271,9 +275,9 @@
                                             <button type="button"
                                                 class="btn btn-secondary"
                                                 data-bs-dismiss="modal">Fechar</button>
-                                            <button type="button"
+                                            <a href="https://getbootstrap.com/docs/5.3/getting-started/introduction/"><button type="button"
                                                 class="btn btn-primary">Ir para
-                                                o site</button>
+                                                o site</button></a>
                                         </div>
                                     </div>
                                 </div>
@@ -289,7 +293,7 @@
                                 Bootstrap no HTML
                             </h3>
 
-                            <div class="modal fade" id="exampleModal3"
+                            <div class="modal fade  modal-xl" id="exampleModal3"
                                 tabindex="-1"
                                 aria-labelledby="exampleModalLabel"
                                 aria-hidden="true">
@@ -305,15 +309,15 @@
                                                 aria-label="Close"></button>
                                         </div>
                                         <div class="modal-body">
-                                            ...
+                                            <pre><code>&lt;script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" <br> integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"crossorigin="anonymous"&gt;&lt;/script&gt;</code></pre>
                                         </div>
                                         <div class="modal-footer">
                                             <button type="button"
                                                 class="btn btn-secondary"
                                                 data-bs-dismiss="modal">Fechar</button>
-                                            <button type="button"
+                                            <a href="https://getbootstrap.com/docs/5.3/getting-started/introduction/"><button type="button"
                                                 class="btn btn-primary">Ir para
-                                                o site</button>
+                                                o site</button></a>
                                         </div>
                                     </div>
                                 </div>
@@ -328,7 +332,7 @@
                                 Biblioteca de <strong class="text-warning">Icones</strong>
                                 no HTML</h3>
 
-                            <div class="modal fade" id="exampleModal2"
+                            <div class="modal fade  modal-xl" id="exampleModal2"
                                 tabindex="-1"
                                 aria-labelledby="exampleModalLabel"
                                 aria-hidden="true">
@@ -351,9 +355,9 @@
                                             <button type="button"
                                                 class="btn btn-secondary"
                                                 data-bs-dismiss="modal">Fechar</button>
-                                            <button type="button"
+                                            <a href="https://getbootstrap.com/docs/5.3/getting-started/introduction/"><button type="button"
                                                 class="btn btn-primary">Ir para
-                                                o site</button>
+                                                o site</button></a>
                                         </div>
                                     </div>
                                 </div>
@@ -468,32 +472,32 @@
             <section
                 class=" bg-white mx-0 pt-5 d-flex justify-content-center">
                 <form class="col-lg-6 card p-3  shadow">
-                            <div class="mb-3">
+                    <div class="mb-3">
 
-                                <h2 class="text-center text-info-emphasis p-2">
-                                <i class="bi bi-chat-left-text p-3 fs-1"></i>
-                                Fale conosco agora e faça parte da nossa
-                                jornada!</h2>
+                        <h2 class="text-center text-info-emphasis p-2">
+                            <i class="bi bi-chat-left-text p-3 fs-1"></i>
+                            Fale conosco agora e faça parte da nossa
+                            jornada!</h2>
 
-                                <label for="exampleFormControlInput1"
-                                    class="form-label">Email
-                                </label>
-                                <input type="email" class="form-control"
-                                    required
-                                    id="exampleFormControlInput1"
-                                    placeholder="nome@mail.com">
-                            </div>
-                            <div class="mb-3">
-                                <label for="exampleFormControlTextarea1"
-                                    class="form-label">Mensagem</label>
-                                <textarea class="form-control" required
-                                    id="exampleFormControlTextarea1" rows="3"></textarea>
-                            </div>
-                            <div class="mb-3">
-                                <button type="submit"
-                                    class="btn btn-sm btn-primary">Enviar</button>
-                            </div>
-                        </form>
+                        <label for="exampleFormControlInput1"
+                            class="form-label">Email
+                        </label>
+                        <input type="email" class="form-control"
+                            required
+                            id="exampleFormControlInput1"
+                            placeholder="nome@mail.com">
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleFormControlTextarea1"
+                            class="form-label">Mensagem</label>
+                        <textarea class="form-control" required
+                            id="exampleFormControlTextarea1" rows="3"></textarea>
+                    </div>
+                    <div class="mb-3">
+                        <button type="submit"
+                            class="btn btn-sm btn-primary">Enviar</button>
+                    </div>
+                </form>
             </section>
 
         </main>
