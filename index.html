@@ -16,6 +16,7 @@
             crossorigin="anonymous"></script>
 
         <link rel="stylesheet" href="style.css">
+        <script src="script.js"></script>
 
     </head>
     <body>
@@ -26,25 +27,67 @@
                     class="d-flex flex-lg-row justify-content-between px-2 w-100">
                     <a class="navbar-brand p-2" href="index.html">Workshop <span
                             class="text-bg-warning p-1">Bootstrap</span></a>
-                    <button class="btn btn-sm btn-outline-primary" type="button"
+
+                    <p class="btn btn-outline-primary" type="button"
                         data-bs-toggle="offcanvas"
                         data-bs-target="#offcanvasRight"
-                        aria-controls="offcanvasRight"><i class="bi bi-list"></i></button>
+                        aria-controls="offcanvasRight"> <span
+                            class="d-none d-md-block">Componentes e Estilos</span>
+                        <i class="bi bi-list d-block d-md-none"></i></p>
 
                 </div>
             </nav>
         </header>
 
+        <!-- ofcanvas -->
         <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight"
             aria-labelledby="offcanvasRightLabel">
             <div class="offcanvas-header">
-                <h5 class="offcanvas-title" id="offcanvasRightLabel">Offcanvas
-                    right</h5>
+                <h2 class="offcanvas-title" id="offcanvasRightLabel">Componentes
+                    e Estilos</h2>
                 <button type="button" class="btn-close"
                     data-bs-dismiss="offcanvas" aria-label="Close"></button>
             </div>
             <div class="offcanvas-body">
-                aqui texto
+                <h4 class="text-secondary mt-2">Cores</h4>
+                <a href="https://getbootstrap.com/docs/5.3/utilities/colors/"><button
+                        class="btn btn-warning btn-sm m-1">Texto</button></a>
+                <a
+                    href="https://getbootstrap.com/docs/5.0/utilities/background/"><button
+                        class="btn btn-warning btn-sm m-1">Fundo</button></a>
+                <h4 class="text-secondary mt-2">Estilo</h4>
+                <a href="https://getbootstrap.com/docs/5.0/utilities/text/"><button
+                        class="btn btn-warning btn-sm m-1">Texto</button></a>
+                <a href="https://getbootstrap.com/docs/5.0/utilities/shadows/"><button
+                        class="btn btn-warning btn-sm m-1">Sombreamento</button></a>
+                <a href="https://getbootstrap.com/docs/5.0/utilities/borders/"><button
+                        class="btn btn-warning btn-sm m-1">Borda</button></a>
+                <a href><button class="btn btn-warning btn-sm m-1">Imagem</button></a>
+                <h4 class="text-secondary mt-2">Sessões</h4>
+                <a
+                    href="https://getbootstrap.com.br/docs/4.1/components/navbar/"><button
+                        class="btn btn-warning btn-sm m-1">Cabeçalho</button></a>
+                <a
+                    href="https://mdbootstrap.com/docs/standard/navigation/footer/"><button
+                        class="btn btn-warning btn-sm m-1">Rodapé</button></a>
+                <a href="https://getbootstrap.com.br/docs/4.1/components/forms/"><button
+                        class="btn btn-warning btn-sm m-1">Formulario</button></a>
+                <h4 class="text-secondary mt-2">Componentes</h4>
+                <a href="https://getbootstrap.com/docs/5.3/components/card/"><button
+                        class="btn btn-warning btn-sm m-1">Cards</button></a>
+                <a href="https://getbootstrap.com/docs/5.3/components/carousel/"><button
+                        class="btn btn-warning btn-sm m-1">Carrossel</button></a>
+                <a href="https://www.codeply.com/p/0CWffz76Q9"><button
+                        class="btn btn-warning btn-sm m-1">Carrossel Multi Item</button></a>
+                <a href="https://getbootstrap.com/docs/5.3/components/modal/"><button
+                        class="btn btn-warning btn-sm m-1">Modal</button></a>
+                <a
+                    href="https://getbootstrap.com/docs/5.3/components/offcanvas/"><button
+                        class="btn btn-warning btn-sm m-1">OfCanvas</button></a>
+                <a
+                    href="https://getbootstrap.com/docs/5.3/components/accordion/"><button
+                        class="btn btn-warning btn-sm m-1">Accordion</button></a>
+
             </div>
         </div>
 
@@ -328,9 +371,9 @@
                 </svg>
             </div>
 
-            <!-- faq -->
+            <!-- faq accordion -->
             <section id="faq"
-                class="bg-transparent mx-0 pb-5 d-flex justify-content-center">
+                class="bg-transparent mx-0 pb-5 d-flex justify-content-center row">
                 <div class="col-lg-8 accordion accordion-flush"
                     id="accordionFlushExample">
                     <h1 class="text-center text-secondary pb-5 cursor-pointer">Perguntas
@@ -421,50 +464,53 @@
                 </div>
             </section>
 
+            <!-- form -->
             <section
-                class=" bg-body-tertiary mx-0 pt-5 d-flex justify-content-center">
-                <div class="col-lg-8">
-                    <div class="row p-3">
-                        <div class="col-md-5">
-                            <h2 class="text-center text-info-emphasis p-2">
-                               <i class="bi bi-chat-left-text p-3 fs-1"></i> Fale conosco agora e faça parte da nossa jornada!</h2>
-                        </div>
-                        <div class="col-md-7 card p-3">
+                class=" bg-white mx-0 pt-5 d-flex justify-content-center">
+                <form class="col-lg-6 card p-3  shadow">
                             <div class="mb-3">
+
+                                <h2 class="text-center text-info-emphasis p-2">
+                                <i class="bi bi-chat-left-text p-3 fs-1"></i>
+                                Fale conosco agora e faça parte da nossa
+                                jornada!</h2>
+
                                 <label for="exampleFormControlInput1"
                                     class="form-label">Email
-                                    </label>
+                                </label>
                                 <input type="email" class="form-control"
+                                    required
                                     id="exampleFormControlInput1"
                                     placeholder="nome@mail.com">
                             </div>
                             <div class="mb-3">
                                 <label for="exampleFormControlTextarea1"
                                     class="form-label">Mensagem</label>
-                                <textarea class="form-control"
+                                <textarea class="form-control" required
                                     id="exampleFormControlTextarea1" rows="3"></textarea>
                             </div>
-                        </div>
-
-                    </div>
-                </div>
+                            <div class="mb-3">
+                                <button type="submit"
+                                    class="btn btn-sm btn-primary">Enviar</button>
+                            </div>
+                        </form>
             </section>
 
         </main>
 
         <!-- Footer -->
-        <footer class="text-center text-lg-start bg-light text-muted">
+        <footer class="text-center text-lg-start bg-light text-muted mt-5">
             <!-- Section: Social media -->
             <section
                 class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
                 <!-- Left -->
-                <div class="mt-5 d-none d-lg-block">
+                <div class="d-none d-lg-block">
                     <span>Conecte-se conosco nas redes sociais:</span>
                 </div>
                 <!-- Left -->
 
                 <!-- Right -->
-                <div class="mt-5">
+                <div>
                     <a href class="me-4 text-reset">
                         <i class="bi bi-facebook"></i>
                     </a>
