@@ -21,25 +21,24 @@ div {
   margin-top: -30%;
 }
 
-#card_img{    
-    margin-bottom: -220px;
+#card_img {
+  margin-bottom: -220px;
 }
 
 @media screen and (max-width: 1024px) {
   .div-svg {
     margin-bottom: -150px;
   }
-  #card_img{    
+  #card_img {
     margin-bottom: -180px;
-}
+  }
 }
 
 @media screen and (max-width: 768px) {
   .div-svg {
     margin-bottom: -50px;
   }
-  #card_img{    
+  #card_img {
     margin-bottom: -120px;
+  }
 }
-}
-
